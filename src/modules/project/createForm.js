@@ -62,7 +62,7 @@ class CreateForm extends React.Component {
                     </ModalBody>
 
                     <ModalFooter>
-                        <Button variant="secondary" onClick={this.toggleForm}>Close</Button>
+                        <Button variant="secondary" onClick={this.props.toggleForm}>Close</Button>
                         <Button variant="primary" onClick={this.saveProject}>Save changes</Button>
                     </ModalFooter>
                 </ModalDialog>

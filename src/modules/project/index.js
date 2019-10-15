@@ -8,11 +8,11 @@ class ListeProduit extends React.Component {
     super(props);
     this.state = {
       projects: [
-        { id: 1, name: 'Wasif', age: 21, email: 'wasif@email.com' },
-        { id: 2, name: 'Ali', age: 19, email: 'ali@email.com' },
-        { id: 3, name: 'Saad', age: 16, email: 'saad@email.com' },
-        { id: 4, name: 'Asad', age: 25, email: 'asad@email.com' }
-      ],
+        { id: 1, Libelle: 'BlockSplyChain', Description: "Mise en place d'application Supply Chain en utilisant le blockchain", Sponsor: 'Experts Community' },
+        { id: 2, Libelle: 'ChatBot', Description: "Mise en place d'un ChatBot ", Sponsor: 'Global Talent Unit' },
+        { id: 3, Libelle: 'Interactive Skillz Matrix', Description: "Application de gestion des compétences et certification des collaborateurs", Sponsor: 'Delivery' },
+        { id: 4, Libelle: 'iVisitCap', Description: "Mise en place d'une application de suivi d'information sur la visite client en utilisant des estimotes", Sponsor: 'Global Talent Unit' },
+        ],
       valTest: { id: 1, name: 'Wasif', age: 21, email: 'wasif@email.com' },
       updatingProject: false,
       val: null,
@@ -99,9 +99,9 @@ class ListeProduit extends React.Component {
               <thead>
                 <tr>
                   <th>ID</th>
-                  <th>NOM</th>
-                  <th>AGE</th>
-                  <th>EMAIL</th>
+                  <th>Libelle</th>
+                  <th>Description</th>
+                  <th>Sponsor</th>
                   <th></th>
                   <th></th>
                 </tr>
@@ -111,9 +111,9 @@ class ListeProduit extends React.Component {
                   this.state.projects.map((project, key) => (
                     <tr key={key}>
                       <td>{project.id}</td>
-                      <td>{project.name}</td>
-                      <td>{project.age}</td>
-                      <td>{project.email}</td>
+                      <td>{project.Libelle}</td>
+                      <td>{project.Description}</td>
+                      <td>{project.Sponsor}</td>
                       <td><Button onClick={this.toggleUpdateForm} value={project.id} className="btn btn-primary" name="btnUpdate">Update</Button></td>
                       <td><Button onClick={this.onDelete} value={this.state.projects.indexOf(project)} className="btn btn-danger" name="btnDelete">Delete</Button></td>
                     </tr>

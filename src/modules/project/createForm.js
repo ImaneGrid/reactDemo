@@ -28,7 +28,7 @@ class CreateForm extends React.Component {
         const name = this.nameInput.current.value;
         const age = this.ageInput.current.value;
         const email = this.emailInput.current.value;
-        const newProject = { id: id, name: name, age: age, email: email };
+        const newProject = { id: id, Libelle: name, Description: age, Sponsor: email };
         console.log("New project", newProject);
         this.props.addItem(newProject);
         this.props.toggleForm();
@@ -48,15 +48,15 @@ class CreateForm extends React.Component {
                             <input ref={this.idInput} id="id" type="email" className="form-control" />
                         </div>
                         <div className="formGroup">
-                            <label for="name">Name :</label>
+                            <label for="name">Libelle :</label>
                             <input ref={this.nameInput} id="name" type="email" className="form-control" />
                         </div>
                         <div className="formGroup">
-                            <label for="age">Age :</label>
+                            <label for="age">Description :</label>
                             <input ref={this.ageInput} id="age" type="email" className="form-control" />
                         </div>
                         <div className="formGroup">
-                            <label for="email">Email :</label>
+                            <label for="email">Sponsor :</label>
                             <input ref={this.emailInput} id="email" type="email" className="form-control" />
                         </div>
                     </ModalBody>

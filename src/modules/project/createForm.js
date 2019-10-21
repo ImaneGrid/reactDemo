@@ -28,7 +28,7 @@ class CreateForm extends React.Component {
         const name = this.nameInput.current.value;
         const age = this.ageInput.current.value;
         const email = this.emailInput.current.value;
-        const newProject = { id: id, Libelle: name, Description: age, Sponsor: email };
+        const newProject = { id: id, libelle: name, description: age, sponsor: email };
         console.log("New project", newProject);
         this.props.addItem(newProject);
         this.props.toggleForm();

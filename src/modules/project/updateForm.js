@@ -31,7 +31,7 @@ class UpdateForm extends React.Component {
     const name = this.nameInput.current.value;
     const age = this.ageInput.current.value;
     const email = this.emailInput.current.value;
-    const newProject = { id: id, Libelle: name, Description: age, Sponsor: email };
+    const newProject = { id: id, libelle: name, description: age, sponsor: email };
     //this.setState({project :newProject });
     this.props.updateItem(newProject);
     
@@ -43,7 +43,7 @@ class UpdateForm extends React.Component {
     const name = this.nameInput.current.value;
     const age = this.ageInput.current.value;
     const email = this.emailInput.current.value;
-    const newProject = { id: id, Libelle: name, Description: age, Sponsor: email };
+    const newProject = { id: id, libelle: name, description: age, sponsor: email };
     //alert(event.target.value);
     const val=event.target.value
     this.setState({project :newProject })
@@ -63,15 +63,15 @@ class UpdateForm extends React.Component {
                         </div>
                         <div className="formGroup">
                             <label for="name">Libelle :</label>
-                            <input onChange={this.hundleChange} ref={this.nameInput} id="name" type="email" className="form-control"  value={this.state.project.Libelle} />
+                            <input onChange={this.hundleChange} ref={this.nameInput} id="name" type="email" className="form-control"  value={this.state.project.libelle} />
                         </div>
                         <div className="formGroup">
                             <label for="age">Description :</label>
-                            <input  onChange={this.hundleChange} ref={this.ageInput} id="age" type="email" className="form-control"  value={this.state.project.Description} />
+                            <input  onChange={this.hundleChange} ref={this.ageInput} id="age" type="email" className="form-control"  value={this.state.project.description} />
                         </div>
                         <div className="formGroup">
                             <label for="email">Sponsor :</label>
-                            <input onChange={this.hundleChange}  ref={this.emailInput} id="email" type="email" className="form-control" value={this.state.project.Sponsor} />
+                            <input onChange={this.hundleChange}  ref={this.emailInput} id="email" type="email" className="form-control" value={this.state.project.sponsor} />
                         </div>
                     </ModalBody>
 

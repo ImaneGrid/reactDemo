@@ -1,0 +1,1179 @@
+{
+  "Projet": [
+    {
+      "id": 1,
+      "libelle": "BlockSplyChain",
+      "description": "Mise en place d'application Supply Chain en utilisant le blockchain",
+      "sponsor": "Experts Community",
+      "productOwner": "Abdeladim MOUHSEN",
+      "statut": "Non démarré",
+      "phase": "FG",
+      "besoinDev": "2",
+      "besoinFonct": "3",
+      "enjeux": "Innovation",
+      "priorite": "4",
+      "Techno": [
+        {
+          "id": 1,
+          "nomTechno": "JAVA"
+        },
+        {
+          "id": 2,
+          "nomTechno": "SYMFONY"
+        },
+        {
+          "id": 3,
+          "nomTechno": "LARAVEL"
+        },
+        {
+          "id": 4,
+          "nomTechno": "C++"
+        },
+        {
+          "id": 5,
+          "nomTechno": "C"
+        }
+      ],
+      "Experts": [
+        {
+          "id": 1,
+          "nomExpert": "GRID",
+          "prenomExpert": "IMANE"
+        },
+        {
+          "id": 2,
+          "nomExpert": "yazidi",
+          "prenomExpert": "abdelkader"
+        },
+        {
+          "id": 3,
+          "nomExpert": "Mansouri",
+          "prenomExpert": "rezkalah"
+        },
+        {
+          "id": 4,
+          "nomExpert": "naji",
+          "prenomExpert": "IMANE"
+        }
+      ],
+      "Manager": [
+        {
+          "id": 1,
+          "nomManager": "GRID",
+          "prenomManager": "IMANE"
+        },
+        {
+          "id": 2,
+          "nomManager": "yazidi",
+          "prenomManager": "abdelkader"
+        },
+        {
+          "id": 3,
+          "nomManager": "Mansouri",
+          "prenomManager": "rezkalah"
+        },
+        {
+          "id": 4,
+          "nomManager": "naji",
+          "prenomManager": "IMANE"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "libelle": "Orange",
+      "description": "Mise en place d'application Supply Chain en utilisant le blockchain",
+      "sponsor": "Experts Community",
+      "productOwner": "Abdeladim MOUHSEN",
+      "statut": "Non démarré",
+      "phase": "FG",
+      "besoinDev": "2",
+      "besoinFonct": "3",
+      "enjeux": "Innovation",
+      "priorite": "4",
+      "Techno": [
+        {
+          "id": 1,
+          "nomTechno": "JAVA"
+        },
+        {
+          "id": 2,
+          "nomTechno": "SYMFONY"
+        },
+        {
+          "id": 3,
+          "nomTechno": "LARAVEL"
+        },
+        {
+          "id": 4,
+          "nomTechno": "C++"
+        },
+        {
+          "id": 5,
+          "nomTechno": "C"
+        }
+      ],
+      "Experts": [
+        {
+          "id": 1,
+          "nomExpert": "GRID",
+          "prenomExpert": "IMANE"
+        },
+        {
+          "id": 2,
+          "nomExpert": "yazidi",
+          "prenomExpert": "abdelkader"
+        },
+        {
+          "id": 3,
+          "nomExpert": "Mansouri",
+          "prenomExpert": "rezkalah"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "libelle": "WEB TV ",
+      "description": "Mise en place d'application Supply Chain en utilisant le blockchain",
+      "sponsor": "Experts Community",
+      "productOwner": "Abdeladim MOUHSEN",
+      "statut": "Non démarré",
+      "phase": "FG",
+      "besoinDev": "2",
+      "besoinFonct": "3",
+      "enjeux": "Innovation",
+      "priorite": "4",
+      "Techno": [
+        {
+          "id": 1,
+          "nomTechno": "JAVA"
+        },
+        {
+          "id": 2,
+          "nomTechno": "SYMFONY"
+        },
+        {
+          "id": 3,
+          "nomTechno": "LARAVEL"
+        },
+        {
+          "id": 4,
+          "nomTechno": "C++"
+        },
+        {
+          "id": 5,
+          "nomTechno": "C"
+        }
+      ],
+      "Experts": [
+        {
+          "id": 1,
+          "nomExpert": "GRID",
+          "prenomExpert": "IMANE"
+        },
+        {
+          "id": 2,
+          "nomExpert": "yazidi",
+          "prenomExpert": "abdelkader"
+        },
+        {
+          "id": 3,
+          "nomExpert": "Mansouri",
+          "prenomExpert": "rezkalah"
+        },
+        {
+          "id": 4,
+          "nomExpert": "naji",
+          "prenomExpert": "IMANE"
+        }
+      ],
+      "Manager": [
+        {
+          "id": 1,
+          "nomManager": "GRID",
+          "prenomManager": "IMANE"
+        },
+        {
+          "id": 2,
+          "nomManager": "yazidi",
+          "prenomManager": "abdelkader"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "libelle": "PLSHPeRE",
+      "description": "Mise en place d'application Supply Chain en utilisant le blockchain",
+      "sponsor": "Experts Community",
+      "productOwner": "Abdeladim MOUHSEN",
+      "statut": "Non démarré",
+      "phase": "FG",
+      "besoinDev": "2",
+      "besoinFonct": "3",
+      "enjeux": "Innovation",
+      "priorite": "4",
+      "Techno": [
+        {
+          "id": 1,
+          "nomTechno": "JAVA"
+        },
+        {
+          "id": 2,
+          "nomTechno": "SYMFONY"
+        },
+        {
+          "id": 3,
+          "nomTechno": "LARAVEL"
+        },
+        {
+          "id": 4,
+          "nomTechno": "C++"
+        },
+        {
+          "id": 5,
+          "nomTechno": "C"
+        }
+      ],
+      "Experts": [
+        {
+          "id": 1,
+          "nomExpert": "GRID",
+          "prenomExpert": "IMANE"
+        },
+        {
+          "id": 2,
+          "nomExpert": "yazidi",
+          "prenomExpert": "abdelkader"
+        },
+        {
+          "id": 3,
+          "nomExpert": "Mansouri",
+          "prenomExpert": "rezkalah"
+        },
+        {
+          "id": 4,
+          "nomExpert": "naji",
+          "prenomExpert": "IMANE"
+        }
+      ],
+      "Manager": [
+        {
+          "id": 1,
+          "nomManager": "GRID",
+          "prenomManager": "IMANE"
+        },
+        {
+          "id": 2,
+          "nomManager": "yazidi",
+          "prenomManager": "abdelkader"
+        },
+        {
+          "id": 3,
+          "nomManager": "Mansouri",
+          "prenomManager": "rezkalah"
+        },
+        {
+          "id": 4,
+          "nomManager": "naji",
+          "prenomManager": "IMANE"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "libelle": "Cap Mobility",
+      "description": "Mise en place d'application Supply Chain en utilisant le blockchain",
+      "sponsor": "Experts Community",
+      "productOwner": "Abdeladim MOUHSEN",
+      "statut": "Non démarré",
+      "phase": "FG",
+      "besoinDev": "2",
+      "besoinFonct": "3",
+      "enjeux": "Innovation",
+      "priorite": "4",
+      "Techno": [
+        {
+          "id": 1,
+          "nomTechno": "JAVA"
+        },
+        {
+          "id": 2,
+          "nomTechno": "SYMFONY"
+        },
+        {
+          "id": 3,
+          "nomTechno": "LARAVEL"
+        },
+        {
+          "id": 4,
+          "nomTechno": "C++"
+        },
+        {
+          "id": 5,
+          "nomTechno": "C"
+        }
+      ],
+      "Experts": [
+        {
+          "id": 1,
+          "nomExpert": "GRID",
+          "prenomExpert": "IMANE"
+        }
+      ],
+      "Manager": [
+        {
+          "id": 1,
+          "nomManager": "GRID",
+          "prenomManager": "IMANE"
+        },
+        {
+          "id": 2,
+          "nomManager": "yazidi",
+          "prenomManager": "abdelkader"
+        },
+        {
+          "id": 3,
+          "nomManager": "Mansouri",
+          "prenomManager": "rezkalah"
+        },
+        {
+          "id": 4,
+          "nomManager": "naji",
+          "prenomManager": "IMANE"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "libelle": "LABOX",
+      "description": "Mise en place d'application Supply Chain en utilisant le blockchain",
+      "sponsor": "Experts Community",
+      "productOwner": "Abdeladim MOUHSEN",
+      "statut": "Non démarré",
+      "phase": "FG",
+      "besoinDev": "2",
+      "besoinFonct": "3",
+      "enjeux": "Innovation",
+      "priorite": "4",
+      "Techno": [
+        {
+          "id": 1,
+          "nomTechno": "JAVA"
+        },
+        {
+          "id": 2,
+          "nomTechno": "SYMFONY"
+        },
+        {
+          "id": 3,
+          "nomTechno": "LARAVEL"
+        },
+        {
+          "id": 4,
+          "nomTechno": "C++"
+        },
+        {
+          "id": 5,
+          "nomTechno": "C"
+        }
+      ],
+      "Experts": [
+        {
+          "id": 1,
+          "nomExpert": "GRID",
+          "prenomExpert": "IMANE"
+        },
+        {
+          "id": 2,
+          "nomExpert": "yazidi",
+          "prenomExpert": "abdelkader"
+        },
+        {
+          "id": 3,
+          "nomExpert": "Mansouri",
+          "prenomExpert": "rezkalah"
+        },
+        {
+          "id": 4,
+          "nomExpert": "naji",
+          "prenomExpert": "IMANE"
+        }
+      ],
+      "Manager": [
+        {
+          "id": 1,
+          "nomManager": "GRID",
+          "prenomManager": "IMANE"
+        },
+        {
+          "id": 2,
+          "nomManager": "yazidi",
+          "prenomManager": "abdelkader"
+        },
+        {
+          "id": 3,
+          "nomManager": "Mansouri",
+          "prenomManager": "rezkalah"
+        },
+        {
+          "id": 4,
+          "nomManager": "naji",
+          "prenomManager": "IMANE"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "libelle": "LAB Innovation",
+      "description": "Mise en place d'application Supply Chain en utilisant le blockchain",
+      "sponsor": "Experts Community",
+      "productOwner": "Abdeladim MOUHSEN",
+      "statut": "Non démarré",
+      "phase": "FG",
+      "besoinDev": "2",
+      "besoinFonct": "3",
+      "enjeux": "Innovation",
+      "priorite": "4",
+      "Techno": [
+        {
+          "id": 1,
+          "nomTechno": "JAVA"
+        },
+        {
+          "id": 2,
+          "nomTechno": "SYMFONY"
+        },
+        {
+          "id": 3,
+          "nomTechno": "LARAVEL"
+        },
+        {
+          "id": 4,
+          "nomTechno": "C++"
+        },
+        {
+          "id": 5,
+          "nomTechno": "C"
+        }
+      ],
+      "Experts": [
+        {
+          "id": 1,
+          "nomExpert": "GRID",
+          "prenomExpert": "IMANE"
+        },
+        {
+          "id": 2,
+          "nomExpert": "yazidi",
+          "prenomExpert": "abdelkader"
+        },
+        {
+          "id": 3,
+          "nomExpert": "Mansouri",
+          "prenomExpert": "rezkalah"
+        },
+        {
+          "id": 4,
+          "nomExpert": "naji",
+          "prenomExpert": "IMANE"
+        }
+      ],
+      "Manager": [
+        {
+          "id": 1,
+          "nomManager": "GRID",
+          "prenomManager": "IMANE"
+        },
+        {
+          "id": 2,
+          "nomManager": "yazidi",
+          "prenomManager": "abdelkader"
+        },
+        {
+          "id": 3,
+          "nomManager": "Mansouri",
+          "prenomManager": "rezkalah"
+        },
+        {
+          "id": 4,
+          "nomManager": "naji",
+          "prenomManager": "IMANE"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "libelle": "One Team Maturity",
+      "description": "Mise en place d'application Supply Chain en utilisant le blockchain",
+      "sponsor": "Experts Community",
+      "productOwner": "Abdeladim MOUHSEN",
+      "statut": "Non démarré",
+      "phase": "FG",
+      "besoinDev": "2",
+      "besoinFonct": "3",
+      "enjeux": "Innovation",
+      "priorite": "4",
+      "Techno": [
+        {
+          "id": 1,
+          "nomTechno": "JAVA"
+        },
+        {
+          "id": 2,
+          "nomTechno": "SYMFONY"
+        },
+        {
+          "id": 3,
+          "nomTechno": "LARAVEL"
+        },
+        {
+          "id": 4,
+          "nomTechno": "C++"
+        },
+        {
+          "id": 5,
+          "nomTechno": "C"
+        }
+      ],
+      "Experts": [
+        {
+          "id": 1,
+          "nomExpert": "GRID",
+          "prenomExpert": "IMANE"
+        },
+        {
+          "id": 2,
+          "nomExpert": "yazidi",
+          "prenomExpert": "abdelkader"
+        },
+        {
+          "id": 3,
+          "nomExpert": "Mansouri",
+          "prenomExpert": "rezkalah"
+        },
+        {
+          "id": 4,
+          "nomExpert": "naji",
+          "prenomExpert": "IMANE"
+        }
+      ],
+      "Manager": [
+        {
+          "id": 1,
+          "nomManager": "GRID",
+          "prenomManager": "IMANE"
+        }
+      ]
+    },
+    {
+      "id": 9
+    }
+  ],
+  "Contributeur": [
+    {
+      "id": 1,
+      "nomContrib": "GRID",
+      "prenomContrib": "Anas",
+      "Contribution": [
+        {
+          "id": 1,
+          "valeur": "BONNE",
+          "duree": "Longue",
+          "dateDebut": "12/9/2018",
+          "datefin": "12/9/2018",
+          "commentaire": "SOME comment",
+          "Role": {
+            "id": 1,
+            "nomRole": "dev"
+          },
+          "ProjetId": "1"
+        },
+        {
+          "id": 2,
+          "valeur": "TRES GRANDE",
+          "duree": "ponctuelle",
+          "dateDebut": "12/9/2018",
+          "datefin": "12/9/2018",
+          "commentaire": "SOME comment",
+          "Role": {
+            "id": 2,
+            "nomRole": "testing"
+          },
+          "ProjetId": "1"
+        },
+        {
+          "id": 3,
+          "valeur": "GRANDE",
+          "duree": "Moyenne",
+          "dateDebut": "12/9/2018",
+          "datefin": "12/9/2018",
+          "commentaire": "SOME comment",
+          "Role": {
+            "id": 3,
+            "nomRole": "BA"
+          },
+          "ProjetId": "2"
+        },
+        {
+          "id": 4,
+          "valeur": "BONNE",
+          "duree": "Moyenne",
+          "dateDebut": "12/9/2018",
+          "datefin": "12/9/2018",
+          "commentaire": "SOME comment",
+          "Role": {
+            "id": 4,
+            "nomRole": "EM"
+          },
+          "ProjetId": "3"
+        },
+        {
+          "id": 5,
+          "valeur": "GRANDE",
+          "duree": "Moyenne",
+          "dateDebut": "12/9/2018",
+          "datefin": "12/9/2018",
+          "commentaire": "SOME comment",
+          "Role": {
+            "id": 5,
+            "nomRole": "PMO"
+          },
+          "ProjetId": "4"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "nomContrib": "QADI",
+      "prenomContrib": "SARA",
+      "Contribution": [
+        {
+          "id": 1,
+          "valeur": "BONNE",
+          "duree": "Longue",
+          "dateDebut": "12/9/2018",
+          "datefin": "12/9/2018",
+          "commentaire": "SOME comment",
+          "Role": {
+            "id": 1,
+            "nomRole": "dev"
+          },
+          "ProjetId": "1"
+        },
+        {
+          "id": 2,
+          "valeur": "TRES GRANDE",
+          "duree": "ponctuelle",
+          "dateDebut": "12/9/2018",
+          "datefin": "12/9/2018",
+          "commentaire": "SOME comment",
+          "Role": {
+            "id": 2,
+            "nomRole": "testing"
+          },
+          "ProjetId": "1"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "nomContrib": "Sgheir",
+      "prenomContrib": "ASMAE",
+      "Contribution": [
+        {
+          "id": 1,
+          "valeur": "BONNE",
+          "duree": "Longue",
+          "dateDebut": "12/9/2018",
+          "datefin": "12/9/2018",
+          "commentaire": "SOME comment",
+          "Role": {
+            "id": 1,
+            "nomRole": "dev"
+          },
+          "ProjetId": "1"
+        },
+        {
+          "id": 2,
+          "valeur": "TRES GRANDE",
+          "duree": "ponctuelle",
+          "dateDebut": "12/9/2018",
+          "datefin": "12/9/2018",
+          "commentaire": "SOME comment",
+          "Role": {
+            "id": 2,
+            "nomRole": "testing"
+          },
+          "ProjetId": "1"
+        },
+        {
+          "id": 3,
+          "valeur": "GRANDE",
+          "duree": "Moyenne",
+          "dateDebut": "12/9/2018",
+          "datefin": "12/9/2018",
+          "commentaire": "SOME comment",
+          "Role": {
+            "id": 3,
+            "nomRole": "BA"
+          },
+          "ProjetId": "2"
+        },
+        {
+          "id": 4,
+          "valeur": "BONNE",
+          "duree": "Moyenne",
+          "dateDebut": "12/9/2018",
+          "datefin": "12/9/2018",
+          "commentaire": "SOME comment",
+          "Role": {
+            "id": 4,
+            "nomRole": "EM"
+          },
+          "ProjetId": "3"
+        },
+        {
+          "id": 5,
+          "valeur": "GRANDE",
+          "duree": "Moyenne",
+          "dateDebut": "12/9/2018",
+          "datefin": "12/9/2018",
+          "commentaire": "SOME comment",
+          "Role": {
+            "id": 5,
+            "nomRole": "PMO"
+          },
+          "ProjetId": "4"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "nomContrib": "TAHIRI",
+      "prenomContrib": "MOHAMMED",
+      "Contribution": [
+        {
+          "id": 1,
+          "valeur": "BONNE",
+          "duree": "Longue",
+          "dateDebut": "12/9/2018",
+          "datefin": "12/9/2018",
+          "commentaire": "SOME comment",
+          "Role": {
+            "id": 1,
+            "nomRole": "dev"
+          },
+          "ProjetId": "1"
+        },
+        {
+          "id": 4,
+          "valeur": "BONNE",
+          "duree": "Moyenne",
+          "dateDebut": "12/9/2018",
+          "datefin": "12/9/2018",
+          "commentaire": "SOME comment",
+          "Role": {
+            "id": 4,
+            "nomRole": "EM"
+          },
+          "ProjetId": "3"
+        },
+        {
+          "id": 5,
+          "valeur": "GRANDE",
+          "duree": "Moyenne",
+          "dateDebut": "12/9/2018",
+          "datefin": "12/9/2018",
+          "commentaire": "SOME comment",
+          "Role": {
+            "id": 5,
+            "nomRole": "PMO"
+          },
+          "ProjetId": "4"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "nomContrib": "TAHIRI",
+      "prenomContrib": "MOHAMMED",
+      "Contribution": [
+        {
+          "id": 1,
+          "valeur": "BONNE",
+          "duree": "Longue",
+          "dateDebut": "12/9/2018",
+          "datefin": "12/9/2018",
+          "commentaire": "SOME comment",
+          "Role": {
+            "id": 1,
+            "nomRole": "dev"
+          },
+          "ProjetId": "1"
+        },
+        {
+          "id": 4,
+          "valeur": "BONNE",
+          "duree": "Moyenne",
+          "dateDebut": "12/9/2018",
+          "datefin": "12/9/2018",
+          "commentaire": "SOME comment",
+          "Role": {
+            "id": 4,
+            "nomRole": "EM"
+          },
+          "ProjetId": "3"
+        },
+        {
+          "id": 5,
+          "valeur": "GRANDE",
+          "duree": "Moyenne",
+          "dateDebut": "12/9/2018",
+          "datefin": "12/9/2018",
+          "commentaire": "SOME comment",
+          "Role": {
+            "id": 5,
+            "nomRole": "PMO"
+          },
+          "ProjetId": "4"
+        }
+      ]
+    }
+  ],
+  "Digicampiste": [
+    {
+      "id": 1,
+      "nomDigi": "nom1",
+      "prenomDigi": "prenom1",
+      "pU": "FR09AS80_TU",
+      "site": "Casablanca",
+      "statut": "Stagiaire",
+      "contexte": "dispo",
+      "commentaire": "No comments",
+      "Passage": {
+        "id": 7,
+        "dateDebut": "23/08/2019",
+        "dateFin": "",
+        "mailFlag": true,
+        "mLFlag": true,
+        "surveyed": false,
+        "responded": true,
+        "Absence": [
+          {
+            "id": 3,
+            "dateDebut": "12/10/2019",
+            "dateFin": "12/10/2019",
+            "TypeAbsence": {
+              "id": 4,
+              "nomTypeAbs": "congé"
+            }
+          },
+          {
+            "id": 4,
+            "dateDebut": "12/10/2019",
+            "dateFin": "12/10/2019",
+            "TypeAbsence": {
+              "id": 3,
+              "nomTypeAbs": "maternité"
+            }
+          }
+        ],
+        "Staffing": [
+          {
+            "id": 4,
+            "dateDebut": "23/10/2019",
+            "dateFin": "18/11/2019",
+            "ProjetId": "4"
+          },
+          {
+            "id": 5,
+            "dateDebut": "11/11/2018",
+            "dateFin": "30/01/2019",
+            "ProjetId": "5"
+          }
+        ]
+      }
+    },
+    {
+      "id": 2,
+      "nomDigi": "nom2",
+      "prenomDigi": "prenom2",
+      "pU": "FR09AS80_TU",
+      "site": "Casablanca",
+      "statut": "Stagiaire",
+      "contexte": "dispo",
+      "commentaire": "No comments",
+      "Passage": {
+        "id": 6,
+        "dateDebut": "30/12/2018",
+        "dateFin": "20/04/2019",
+        "mailFlag": true,
+        "mLFlag": true,
+        "surveyed": false,
+        "responded": false,
+        "Absence": {
+          "id": 4,
+          "dateDebut": "12/10/2019",
+          "dateFin": "12/10/2019",
+          "TypeAbsence": {
+            "id": 3,
+            "nomTypeAbs": "maternité"
+          }
+        },
+        "Staffing": [
+          {
+            "id": 4,
+            "dateDebut": "23/10/2019",
+            "dateFin": "18/11/2019",
+            "ProjetId": "4"
+          },
+          {
+            "id": 5,
+            "dateDebut": "11/11/2018",
+            "dateFin": "30/01/2019",
+            "ProjetId": "5"
+          }
+        ]
+      }
+    },
+    {
+      "id": 3,
+      "nomDigi": "nom3",
+      "prenomDigi": "prenom3",
+      "pU": "FR09AS80_TU",
+      "site": "Casablanca",
+      "statut": "Stagiaire",
+      "contexte": "dispo",
+      "commentaire": "No comments",
+      "Passage": {
+        "id": 5,
+        "dateDebut": "22/06/2019",
+        "dateFin": "10/09/2019",
+        "mailFlag": true,
+        "mLFlag": true,
+        "surveyed": false,
+        "responded": true,
+        "Absence": {
+          "id": 4,
+          "dateDebut": "12/10/2019",
+          "dateFin": "12/10/2019",
+          "TypeAbsence": {
+            "id": 3,
+            "nomTypeAbs": "maternité"
+          }
+        },
+        "Staffing": [
+          {
+            "id": 4,
+            "dateDebut": "23/10/2019",
+            "dateFin": "18/11/2019",
+            "ProjetId": "4"
+          },
+          {
+            "id": 5,
+            "dateDebut": "11/11/2018",
+            "dateFin": "30/01/2019",
+            "ProjetId": "5"
+          }
+        ]
+      }
+    },
+    {
+      "id": 4,
+      "nomDigi": "nom4",
+      "prenomDigi": "prenom4",
+      "pU": "FR09AS80_TU",
+      "site": "Casablanca",
+      "statut": "Stagiaire",
+      "contexte": "dispo",
+      "commentaire": "No comments",
+      "Passage": {
+        "id": 4,
+        "dateDebut": "31/05/2019",
+        "dateFin": "",
+        "mailFlag": false,
+        "mLFlag": false,
+        "surveyed": false,
+        "responded": false,
+        "Absence": {
+          "id": 5,
+          "dateDebut": "12/10/2019",
+          "dateFin": "12/10/2019",
+          "TypeAbsence": {
+            "id": 2,
+            "nomTypeAbs": "congé payé"
+          }
+        },
+        "Staffing": {
+          "id": 6,
+          "dateDebut": "04/09/2019",
+          "dateFin": "23/10/2019",
+          "ProjetId": "6"
+        }
+      }
+    },
+    {
+      "id": 5,
+      "nomDigi": "nom5",
+      "prenomDigi": "prenom5",
+      "pU": "FR09AS80_TU",
+      "site": "Rabat",
+      "statut": "interne",
+      "contexte": "sur projet",
+      "commentaire": "No comments",
+      "Passage": {
+        "id": 3,
+        "dateDebut": "06/09/2019",
+        "dateFin": "10/10/2019",
+        "mailFlag": true,
+        "mLFlag": true,
+        "surveyed": false,
+        "responded": false,
+        "Absence": [
+          {
+            "id": 4,
+            "dateDebut": "12/10/2019",
+            "dateFin": "12/10/2019",
+            "TypeAbsence": {
+              "id": 3,
+              "nomTypeAbs": "maternité"
+            }
+          },
+          {
+            "id": 5,
+            "dateDebut": "12/10/2019",
+            "dateFin": "12/10/2019",
+            "TypeAbsence": {
+              "id": 2,
+              "nomTypeAbs": "congé payé"
+            }
+          }
+        ],
+        "Staffing": [
+          {
+            "id": 7,
+            "dateDebut": "30/01/2019",
+            "dateFin": "31/05/2019",
+            "ProjetId": "7"
+          },
+          {
+            "id": 8,
+            "dateDebut": "01/12/2018",
+            "dateFin": "16/03/2019",
+            "ProjetId": "8"
+          },
+          {
+            "id": 9,
+            "dateDebut": "18/11/2018",
+            "dateFin": "30/01/2019",
+            "ProjetId": "1"
+          }
+        ]
+      }
+    },
+    {
+      "id": 6,
+      "nomDigi": "nom6",
+      "prenomDigi": "prenom6",
+      "pU": "FR09AS80_TU",
+      "site": "Rabat",
+      "statut": "interne",
+      "contexte": "sur projet",
+      "commentaire": "No comments",
+      "Passage": {
+        "id": 2,
+        "dateDebut": "11/09/2019",
+        "dateFin": "",
+        "mailFlag": true,
+        "mLFlag": true,
+        "surveyed": false,
+        "responded": true,
+        "Absence": [
+          {
+            "id": 1,
+            "dateDebut": "12/10/2019",
+            "dateFin": "12/10/2019",
+            "TypeAbsence": {
+              "id": 5,
+              "nomTypeAbs": "congé"
+            }
+          },
+          {
+            "id": 2,
+            "dateDebut": "12/10/2019",
+            "dateFin": "12/10/2019",
+            "TypeAbsence": {
+              "id": 4,
+              "nomTypeAbs": "congé"
+            }
+          }
+        ],
+        "Staffing": [
+          {
+            "id": 3,
+            "dateDebut": "31/05/2019",
+            "dateFin": "27/07/2019",
+            "ProjetId": "3"
+          },
+          {
+            "id": 4,
+            "dateDebut": "23/10/2019",
+            "dateFin": "18/11/2019",
+            "ProjetId": "4"
+          },
+          {
+            "id": 5,
+            "dateDebut": "11/11/2018",
+            "dateFin": "30/01/2019",
+            "ProjetId": "5"
+          }
+        ]
+      }
+    },
+    {
+      "id": 7,
+      "nomDigi": "nom7",
+      "prenomDigi": "prenom7",
+      "pU": "FR09AS80_TU",
+      "site": "Rabat",
+      "statut": "interne",
+      "contexte": "sur projet",
+      "commentaire": "No comments",
+      "Passage": {
+        "id": 1,
+        "dateDebut": "12/10/2019",
+        "dateFin": "",
+        "mailFlag": true,
+        "mLFlag": false,
+        "surveyed": false,
+        "responded": false,
+        "Absence": {
+          "id": 6,
+          "dateDebut": "12/10/2019",
+          "dateFin": "12/10/2019",
+          "TypeAbsence": {
+            "id": 1,
+            "nomTypeAbs": "maladie"
+          }
+        },
+        "Staffing": [
+          {
+            "id": 1,
+            "dateDebut": "16/03/2019",
+            "dateFin": "23/10/2019",
+            "ProjetId": "1"
+          },
+          {
+            "id": 2,
+            "dateDebut": "27/07/2019",
+            "dateFin": "04/09/2019",
+            "ProjetId": "2"
+          }
+        ]
+      }
+    },
+    {
+      "id": 8
+    }
+  ]
+}

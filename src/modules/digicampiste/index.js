@@ -1,50 +1,77 @@
 import React from 'react'
 import Button from 'react-bootstrap/Button'
+import Menu from '../../Menu'
+import {Redirect} from 'react-router-dom'
 
 
 class ListeDigicampiste extends React.Component {
   constructor(props) {
     super(props);
+    const token=localStorage.getItem("token")
+    let loggedIn = true
+    if(token == null){
+        loggedIn = false
+    }
+   
+    
     this.state = {
-      projects: [
+      digicampistes: [
         { id: 1, name: 'Wasif', age: 21, email: 'wasif@email.com' },
         { id: 2, name: 'Ali', age: 19, email: 'ali@email.com' },
         { id: 3, name: 'Saad', age: 16, email: 'saad@email.com' },
         { id: 4, name: 'Asad', age: 25, email: 'asad@email.com' },
-        ]
+        ],
+        loggedIn
       
     }
   }
-
+  componentDidMount() {
+    fetch('http://localhost:3000/Digicampiste')
+    .then(res=>res.json())
+    .then((data)=>{
+      this.setState({digicampistes:data})
+      console.log(this.state.projects)
+    })
+    .catch(console.log)
+  }
 
 
 
  
 
   render() {
-    
+    if(this.state.loggedIn == false){
+      return <Redirect to="/" />
+    }
       return (
         <div>
+          <Menu/>
           <div>
             <table className=" table striped bordered hover" size="sm">
               <thead>
                 <tr>
                   <th>ID</th>
-                  <th>Digicampiste</th>
-                  <th>AGE</th>
-                  <th>EMAIL</th>
+                  <th>Nom</th>
+                  <th>Prenom</th>
+                  <th>PU</th>
+                  <th>Site</th>
+                  <th>Statut</th>
+                  <th>Contexte</th>
                   <th></th>
                   <th></th>
                 </tr>
               </thead>
               <tbody>
                 {
-                  this.state.projects.map((project, key) => (
+                  this.state.digicampistes.map((digicampiste, key) => (
                     <tr key={key}>
-                      <td>{project.id}</td>
-                      <td>{project.name}</td>
-                      <td>{project.age}</td>
-                      <td>{project.email}</td>
+                      <td>{digicampiste.id}</td>
+                      <td>{digicampiste.nomDigi}</td>
+                      <td>{digicampiste.prenomDigi}</td>
+                      <td>{digicampiste.pU}</td>
+                      <td>{digicampiste.site}</td>
+                      <td>{digicampiste.staut}</td>
+                      <td>{digicampiste.contexte}</td>
                       <td><Button  className="btn btn-primary" name="btnUpdate">Update</Button></td>
                       <td><Button  className="btn btn-danger" name="btnDelete">Delete</Button></td>
                     </tr>

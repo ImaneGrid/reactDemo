@@ -142,7 +142,7 @@ class ListeProduit extends React.Component {
             </table>
           </div>
           <div>
-            <Button onClick={this.toggleAddForm} className="btn btn-success">Ajouter un nouveau projet</Button>
+            <Button onClick={this.toggleAddForm} className="btn btn-success">Ajouter un projet</Button>
           </div>
 
         </div>

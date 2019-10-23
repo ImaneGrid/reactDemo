@@ -1,7 +1,11 @@
-import React from 'react'
-import Button from 'react-bootstrap/Button'
-import Menu from '../../Menu'
-import {Redirect} from 'react-router-dom'
+import React from 'react';
+import Button from 'react-bootstrap/Button';
+import Menu from '../../Menu';
+import Footer from '../../Footer';
+import {Redirect} from 'react-router-dom';
+import background from '../../../src/images/background.png';
+import DropdownButton from 'react-bootstrap/DropdownButton';
+import Dropdown from 'react-bootstrap/Dropdown'
 
 
 class ListeDigicampiste extends React.Component {
@@ -44,8 +48,12 @@ class ListeDigicampiste extends React.Component {
       return <Redirect to="/" />
     }
       return (
-        <div>
+        <div style={{backgroundImage: `url(${background})`}}>
           <Menu/>
+        <h3 align="left">Filtre de recherche</h3>
+        <div>
+
+</div>
           <div>
             <table className=" table striped bordered hover" size="sm">
               <thead>
@@ -81,9 +89,9 @@ class ListeDigicampiste extends React.Component {
             </table>
           </div>
           <div>
-            <Button onClick={this.toggleAddForm} className="btn btn-success">Ajouter un nouveau projet</Button>
+            <Button onClick={this.toggleAddForm} className="btn btn-success">Ajouter un Digicampiste</Button>
           </div>
-
+          <Footer/> 
         </div>
       );
     }

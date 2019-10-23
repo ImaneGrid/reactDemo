@@ -39,7 +39,7 @@ class Login extends React.Component {
         e.preventDefault();
         const { username, password } = this.state
 
-        if (username == "grid" && password == "imane") {
+        if (username == "admin" && password == "admin") {
             localStorage.setItem("token", "dqsdqsdqsdqdqsd")
             this.setState({ loggedIn: true })
         }

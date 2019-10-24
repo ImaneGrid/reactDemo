@@ -8,11 +8,11 @@ import Logout from './modules/Authentification/Logout';
 
 
 
+
 function App() {
   return (
-    <div className="App">
-      
-      <Router/>
+    <div className="App" >
+     <Router/>
     </div>
   );
 }

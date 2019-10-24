@@ -4,7 +4,8 @@ import UpdateForm from './updateForm'
 import CreateForm from './createForm'
 import Menu from '../../Menu';
 import {Redirect} from 'react-router-dom'
-
+import FiltreRecherche from './filtreRecherche'
+import Table from 'react-bootstrap/Table'
 
 class ListeProduit extends React.Component {
   constructor(props) {
@@ -38,6 +39,11 @@ class ListeProduit extends React.Component {
       console.log(this.state.projects)
     })
     .catch(console.log)
+  }
+
+  projetsFiltrer=(newListe)=>{
+    this.setState({projects:newListe});
+
   }
 
   componentWillUnmount() {
@@ -113,8 +119,9 @@ class ListeProduit extends React.Component {
       return (
         <div>
           <Menu/>
-          <div>
-            <table className=" table striped bordered hover" size="sm">
+          <FiltreRecherche  Filtrage={this.projetsFiltrer}/>
+          <div style={{marginLeft:"3%",marginRight:"3%"}}>
+            <Table  hover size="bg">
               <thead>
                 <tr>
                   <th>ID</th>
@@ -133,13 +140,15 @@ class ListeProduit extends React.Component {
                       <td>{project.libelle}</td>
                       <td>{project.description}</td>
                       <td>{project.sponsor}</td>
-                      <td><Button onClick={() => this.toggleUpdateForm(project.id)}  className="btn btn-primary" name="btnUpdate">Update</Button></td>
-                      <td><Button onClick={this.onDelete} value={this.state.projects.indexOf(project)} className="btn btn-danger" name="btnDelete">Delete</Button></td>
+                      <td><Button style={{ borderRadius: 19}} className="btn btn-success"  size="sm" name="détails"><i className="fa fa-search-plus"> Détails</i></Button></td>
+                      <td><Button style={{ borderRadius: 19 }} onClick={() => this.toggleUpdateForm(project.id)}  className="btn btn-primary" size="sm" name="btnUpdate"><i className="fa fa-edit"> Modifier</i></Button></td>
+                      <td><Button style={{ borderRadius: 19 }} onClick={this.onDelete} value={this.state.projects.indexOf(project)} className="btn btn-danger" size="sm" name="btnDelete"><i className="fa fa-trash"> Supprimer</i></Button></td>
+                     
                     </tr>
                   )) 
                 }
               </tbody>
-            </table>
+            </Table>
           </div>
           <div>
             <Button onClick={this.toggleAddForm} className="btn btn-success">Ajouter un nouveau projet</Button>

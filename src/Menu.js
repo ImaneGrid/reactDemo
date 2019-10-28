@@ -16,7 +16,7 @@ function Menu() {
           {/* <Nav.Link href="staffing"><Link to="/newProject">Add project</Link></Nav.Link> */}
           <Nav.Item><Nav.Link href="digicampiste"><Link to="/digicampiste">Digicampistes</Link></Nav.Link></Nav.Item>
           <Nav.Item><Nav.Link href="projet"><Link to="/home">Projets</Link></Nav.Link></Nav.Item>
-          <Nav.Item><Nav.Link href="contributeur"><Link to="/contributeur">Contributeurs</Link></Nav.Link></Nav.Item>
+          <Nav.Item><Nav.Link href="contributeur"><Link to="/contributor">Contributeurs</Link></Nav.Link></Nav.Item>
         </Navbar.Collapse>
         <Navbar.Collapse className="justify-content-end">
           <Nav.Link href="digicampiste"><Link to="/logout">Se deconnecter</Link></Nav.Link>

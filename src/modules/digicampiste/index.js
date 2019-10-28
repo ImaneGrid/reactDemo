@@ -5,7 +5,12 @@ import Footer from '../../Footer';
 import { Redirect } from 'react-router-dom';
 import background from '../../../src/images/background.png';
 import DropdownButton from 'react-bootstrap/DropdownButton';
-import Dropdown from 'react-bootstrap/Dropdown'
+import Dropdown from 'react-bootstrap/Dropdown';
+import FiltreRecherche from './filtreRecherche';
+import Table from 'react-bootstrap/Table';
+import UpdateForm from './updateForm';
+import CreateForm from './createForm';
+import './style.css';
 
 
 class ListeDigicampiste extends React.Component {
@@ -50,11 +55,9 @@ class ListeDigicampiste extends React.Component {
     return (
       <div style={{ backgroundImage: `url(${background})` }}>
         <Menu />
-        <h3 align="left">Filtre de recherche</h3>
-        <div>
-        </div>
-        <div>
-          <table className=" table striped bordered hover" size="sm">
+        <FiltreRecherche Filtrage={this.projetsFiltrer} />
+        <div style={{ marginLeft: "3%", marginRight: "3%" }}>
+          <Table hover size="bg">
             <thead>
               <tr>
                 <th>ID</th>
@@ -64,6 +67,7 @@ class ListeDigicampiste extends React.Component {
                 <th>Site</th>
                 <th>Statut</th>
                 <th>Contexte</th>
+                <th></th>
                 <th></th>
                 <th></th>
               </tr>
@@ -77,20 +81,22 @@ class ListeDigicampiste extends React.Component {
                     <td>{digicampiste.prenomDigi}</td>
                     <td>{digicampiste.pU}</td>
                     <td>{digicampiste.site}</td>
-                    <td>{digicampiste.staut}</td>
+                    <td>{digicampiste.statut}</td>
                     <td>{digicampiste.contexte}</td>
-                    <td><Button className="btn btn-primary" name="btnUpdate">Update</Button></td>
-                    <td><Button className="btn btn-danger" name="btnDelete">Delete</Button></td>
+                    <td><Button style={{ borderRadius: 19 }} className="btn btn-success" size="sm" name="détails"><i className="fa fa-search-plus"> Détails</i></Button></td>
+                    <td><Button style={{ borderRadius: 19 }} onClick={() => this.toggleUpdateForm(digicampiste.id)} className="btn btn-primary" size="sm" name="btnUpdate"><i className="fa fa-edit"> Modifier</i></Button></td>
+                    <td><Button style={{ borderRadius: 19 }} onClick={this.onDelete} value={this.state.digicampistes.indexOf(digicampiste)} className="btn btn-danger" size="sm" name="btnDelete"><i className="fa fa-trash"> Supprimer</i></Button></td>
+
                   </tr>
                 ))
               }
             </tbody>
-          </table>
+          </Table>
         </div>
         <div>
-          <Button align="right" onClick={this.toggleAddForm} className="btn btn-success">Ajouter un Digicampiste</Button>
+          <Button onClick={this.toggleAddForm} className="btn btn-success">Ajouter un digicampiste</Button>
         </div>
-        <Footer/>
+        <Footer />
       </div>
     );
   }

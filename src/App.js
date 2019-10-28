@@ -9,11 +9,11 @@ import Footer from './Footer';
 
 
 
+
 function App() {
   return (
-    <div className="App">
-      
-      <Router/>
+    <div className="App" >
+     <Router/>
     </div>
   );
 }

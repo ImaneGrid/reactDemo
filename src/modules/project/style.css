@@ -1,0 +1,32 @@
+.dial{
+    width:50% !important
+    
+}
+.modal-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 200% !important;
+    pointer-events: auto;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: .3rem;
+    outline: 0;
+    margin-left: -50%;
+}
+.test {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 1rem;
+    border-top: 1px solid #dee2e6;
+    border-bottom-right-radius: .3rem;
+    border-bottom-left-radius: .3rem;
+}
+.modal-footer {
+    background: #263238;
+    height: 35px;
+    padding: 15px;
+    display: none !important;
+}

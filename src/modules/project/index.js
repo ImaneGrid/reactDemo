@@ -7,7 +7,11 @@ import {Redirect} from 'react-router-dom'
 import FiltreRecherche from './filtreRecherche'
 import Table from 'react-bootstrap/Table'
 import Footer from '../../Footer'
-import background from '../../../src/images/background.png';
+import background from '../../../src/images/background.png'
+import DetailForm from './detailForm'
+import Dialog from 'react-bootstrap-dialog'
+import './style.css'
+import DailogTitle from 'react-bootstrap-dialog'
 
 class ListeProduit extends React.Component {
   constructor(props) {
@@ -19,19 +23,18 @@ class ListeProduit extends React.Component {
     }
    
     this.state = {
-      projects: [
-        /* { id: 1, Libelle: 'BlockSplyChain', Description: "Mise en place d'application Supply Chain en utilisant le blockchain", Sponsor: 'Experts Community' },
-        { id: 2, Libelle: 'ChatBot', Description: "Mise en place d'un ChatBot ", Sponsor: 'Global Talent Unit' },
-        { id: 3, Libelle: 'Interactive Skillz Matrix', Description: "Application de gestion des compétences et certification des collaborateurs", Sponsor: 'Delivery' },
-        { id: 4, Libelle: 'iVisitCap', Description: "Mise en place d'une application de suivi d'information sur la visite client en utilisant des estimotes", Sponsor: 'Global Talent Unit' },
-         */],
+      projects: [],
       valTest: { id: 1, name: 'Wasif', age: 21, email: 'wasif@email.com' },
       updatingProject: false,
       val: null,
       addingProject: false,
-      loggedin
+      loggedin,
+      detail: false,
+      projetDetail:null
+      
     }
   }
+  
 
   componentDidMount() {
     fetch('http://localhost:3000/Projet')
@@ -47,13 +50,40 @@ class ListeProduit extends React.Component {
     this.setState({projects:newListe});
 
   }
+  onClick= ()=> {
+     this.dialog.showAlert(<CreateForm addItem={this.onAddItem} dialogue={this.dialog} toggleForm={this.toggleAddForm} />)
+ }
+ detailsProject = (project)=>{
+  /* this.setState({projetDetail:project})
+  this.toggleDetailForm()
+  this.dialogue.showAlert(<DetailForm projet={this.state.projetDetail} dialogue={this.dialogue} toggleDetail={this.toggleDetailForm}/>) */
+  this.dialogue.showAlert(<DetailForm projet={project} dialogue={this.dialogue} toggleDetail={this.toggleDetailForm}/>)
+ }
+ toggleUpdateForm = (project) => {
+   
+  this.setState({
+    updatingProject:
+      (this.state.updatingProject ? false : true),
+      
+      
+  });
+  this.setState({val:project});
+  this.dialogueUpdate.showAlert(<UpdateForm id={project} dialogue={this.dialogueUpdate} updateItem={this.onUpdate}/>)
+  
+   /* for(var i=0; i<this.state.projects.length;i++){
+     if(this.state.projects[i].id == id){
+       this.setState({val:this.state.projects[i]});
+     }
+   } */
 
+}
   componentWillUnmount() {
     console.log("This component will not exist anymore");
   }
 
-  onDelete = (event) => {
-    const ind = event.target.value;
+  onDelete = (project) => {
+    const ind = this.state.projects.indexOf(project);
+   // alert(this.state.projects.length)
     var newListe = this.state.projects.slice();
     newListe.splice(ind, 1);
     this.setState({ projects: newListe });
@@ -67,22 +97,7 @@ class ListeProduit extends React.Component {
     });
   }
 
-  toggleUpdateForm = (id) => {
-   
-    this.setState({
-      updatingProject:
-        (this.state.updatingProject ? false : true),
-        
-        
-    });
-   
-     for(var i=0; i<this.state.projects.length;i++){
-       if(this.state.projects[i].id == id){
-         this.setState({val:this.state.projects[i]});
-       }
-     }
-
-  }
+ 
 
   onUpdate = (item) => {
     console.log("Updating project: ", item);
@@ -106,17 +121,24 @@ class ListeProduit extends React.Component {
     this.setState({ projects: this.state.projects });
     console.log(this.state.projects);
   }
+  toggleDetailForm = ()=>{
+    this.setState({detail:(this.state.detail ? false :true
+      )})
+  }
+ 
 
   render() {
     if(this.state.loggedin== false){
       return <Redirect to="/" />
     }
-    if (this.state.addingProject) {
+     /* if (this.state.addingProject) {
       return <CreateForm addItem={this.onAddItem} toggleForm={this.toggleAddForm} />
-    }
-    else if (this.state.updatingProject) {
+    }  */
+    /* else if (this.state.updatingProject) {
       return <UpdateForm id={this.state.val} updateItem={this.onUpdate} toggleUpdate={this.toggleUpdateForm}/>
-    }
+    } *//* else if(this.state.detail){
+      return <DetailForm projet={this.state.projetDetail} toggleDetail={this.toggleDetailForm}/>
+    } */
     else {
       return (
         <div style={{ backgroundImage: `url(${background})` }}>
@@ -131,7 +153,9 @@ class ListeProduit extends React.Component {
                   <th>Description</th>
                   <th>Sponsor</th>
                   <th></th>
+                  <th>Actions</th>
                   <th></th>
+                  
                 </tr>
               </thead>
               <tbody>
@@ -142,9 +166,12 @@ class ListeProduit extends React.Component {
                       <td>{project.libelle}</td>
                       <td>{project.description}</td>
                       <td>{project.sponsor}</td>
-                      <td><Button style={{ borderRadius: 19}} className="btn btn-success"  size="sm" name="détails"><i className="fa fa-search-plus"> Détails</i></Button></td>
-                      <td><Button style={{ borderRadius: 19 }} onClick={() => this.toggleUpdateForm(project.id)}  className="btn btn-primary" size="sm" name="btnUpdate"><i className="fa fa-edit"> Modifier</i></Button></td>
-                      <td><Button style={{ borderRadius: 19 }} onClick={this.onDelete} value={this.state.projects.indexOf(project)} className="btn btn-danger" size="sm" name="btnDelete"><i className="fa fa-trash"> Supprimer</i></Button></td>
+                      <td><Button style={{ borderRadius: 19}} onClick={() => this.detailsProject(project)} className="btn btn-success"  size="sm" name="détails"><i className="fa fa-search-plus">Détails</i></Button></td>
+                      <Dialog  class="dialogue"  ref={(component) => { this.dialogue = component }} /> 
+
+                      <td><Button style={{ borderRadius: 19 }} onClick={() => this.toggleUpdateForm(project)}  className="btn btn-primary" size="sm" name="btnUpdate"><i className="fa fa-edit">update </i></Button></td>
+                      <Dialog  class="dialogue"  ref={(component) => { this.dialogueUpdate = component }} /> 
+                      <td><Button style={{ borderRadius: 19 }} onClick={() => this.onDelete(project)} value={this.state.projects.indexOf(project)} className="btn btn-danger" size="sm" name="btnDelete"><i className="fa fa-trash"> delete</i></Button></td>
                      
                     </tr>
                   )) 
@@ -153,7 +180,12 @@ class ListeProduit extends React.Component {
             </Table>
           </div>
           <div>
-            <Button onClick={this.toggleAddForm} className="btn btn-success">Ajouter un projet</Button>
+            <Button onClick={this.onClick} className="btn btn-success">Ajouter un nouveau projet</Button>
+            <Dialog  class="dialogue"  ref={(component) => { this.dialog = component }} /> 
+            
+
+            
+            
           </div>
           <Footer/>
         </div>

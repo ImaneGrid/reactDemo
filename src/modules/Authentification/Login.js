@@ -81,10 +81,10 @@ class Login extends React.Component {
                                 </InputGroup>
                                     
                                 <InputGroup className="mb-3" style={{ borderRadius: 19,borderColor:'#7989c7' }}>
-                                     {/* <InputGroup.Prepend>
+                                      <InputGroup.Prepend>
                                     <InputGroup.Text id="basic-addon1"><i class="fa fa-unlock-alt"></i></InputGroup.Text>
-                                    </InputGroup.Prepend> */}
-                                    <Form.Control  style={{ borderRadius: 19, borderColor: '#403e70' }} type="password" placeholder="Enter your Password" name="password" value={this.state.password} onChange={this.onChange} />
+                                    </InputGroup.Prepend> 
+                                     <Form.Control  type="password" placeholder="Enter your Password" name="password" value={this.state.password} onChange={this.onChange} />
                                 </InputGroup>
                         </Col>
 <Button style={{ borderRadius: 19, width: 330, backgroundColor: '#403e70', borderColor: '#403e70' }} variant="primary" type="submit">

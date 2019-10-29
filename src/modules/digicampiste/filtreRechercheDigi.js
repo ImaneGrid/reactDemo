@@ -6,23 +6,23 @@ import ButtonGroup from 'react-bootstrap/ButtonGroup'
 import Form from 'react-bootstrap/Form';
 import InputGroup from 'react-bootstrap/InputGroup'
 import Button from 'react-bootstrap/Button'
-import './style.css'
 
-class FiltreRecherche extends Component {
+
+class FiltreRechercheDigi extends Component {
     constructor(props) {
         super(props)
         this.state = {
             query: '',
-            projets: []
+            digicampistes: []
         }
 
     }
     getInfo = () => {
-        fetch(`http://localhost:3000/Projet?libelle=${this.state.query}`)
+        fetch(`http://localhost:3000/Digicampiste?nomDigi=${this.state.query}`)
             .then(res => res.json())
             .then((data) => {
-                this.setState({ projets: data })
-                console.log(this.state.projets)
+                this.setState({ digicampistes: data })
+                console.log(this.state.digicampistes)
             })
             .catch(console.log)
     }
@@ -35,8 +35,8 @@ class FiltreRecherche extends Component {
     }
     filtrer=()=>{
         this.getInfo()
-        this.props.Filtrage(this.state.projets)
-        alert(this.state.projets)
+        this.props.Filtrage(this.state.digicampistes)
+        alert(this.state.digicampistes)
     }
 
     render() {
@@ -59,7 +59,7 @@ class FiltreRecherche extends Component {
                         </DropdownButton>
                     </ButtonGroup>
                     <ButtonGroup className="mr-5">
-                        <DropdownButton variant="light" id="dropdown-item-button" title="Priorité">
+                        <DropdownButton variant="light" id="dropdown-item-button" title="Projet">
                             <Dropdown.Item as="button">Java</Dropdown.Item>
                             <Dropdown.Item as="button">.Net</Dropdown.Item>
                             <Dropdown.Item as="button">Angular</Dropdown.Item>
@@ -81,4 +81,4 @@ class FiltreRecherche extends Component {
         )
     }
 }
-export default FiltreRecherche
+export default FiltreRechercheDigi

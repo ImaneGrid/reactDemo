@@ -17,7 +17,7 @@ function Menu() {
                         <Nav.Link href="staffing"><Link to="/staffing">Staffing</Link></Nav.Link>
                         {/* <Nav.Link href="staffing"><Link to="/newProject">Add project</Link></Nav.Link> */}
                         <Nav.Link href="digicampiste"><Link to="/digicampiste">Digicampiste</Link></Nav.Link>
-                        <Nav.Link href="digicampiste"><Link to="/logout">Logout</Link></Nav.Link>
+                        <Nav.Link href=""><Link to="/logout">Logout</Link></Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>

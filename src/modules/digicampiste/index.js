@@ -2,7 +2,8 @@ import React from 'react'
 import Button from 'react-bootstrap/Button'
 import Menu from '../../Menu'
 import {Redirect} from 'react-router-dom'
-
+import FiltreRechercheDigi from './filtreRechercheDigi'
+import Table from 'react-bootstrap/Table'
 
 class ListeDigicampiste extends React.Component {
   constructor(props) {
@@ -15,12 +16,7 @@ class ListeDigicampiste extends React.Component {
    
     
     this.state = {
-      digicampistes: [
-        { id: 1, name: 'Wasif', age: 21, email: 'wasif@email.com' },
-        { id: 2, name: 'Ali', age: 19, email: 'ali@email.com' },
-        { id: 3, name: 'Saad', age: 16, email: 'saad@email.com' },
-        { id: 4, name: 'Asad', age: 25, email: 'asad@email.com' },
-        ],
+      digicampistes: [],
         loggedIn
       
     }
@@ -30,12 +26,15 @@ class ListeDigicampiste extends React.Component {
     .then(res=>res.json())
     .then((data)=>{
       this.setState({digicampistes:data})
-      console.log(this.state.projects)
+     
     })
     .catch(console.log)
   }
 
+  digicampisteFiltrer=(newListe)=>{
+    this.setState({digicampistes:newListe});
 
+  }
 
  
 
@@ -46,8 +45,9 @@ class ListeDigicampiste extends React.Component {
       return (
         <div>
           <Menu/>
-          <div>
-            <table className=" table striped bordered hover" size="sm">
+          <FiltreRechercheDigi Filtrage={this.digicampisteFiltrer}/>
+          <div style={{marginLeft:"3%",marginRight:"3%"}}>
+            <Table hover size="bg">
               <thead>
                 <tr>
                   <th>ID</th>
@@ -58,6 +58,7 @@ class ListeDigicampiste extends React.Component {
                   <th>Statut</th>
                   <th>Contexte</th>
                   <th></th>
+                  <th>Actions</th>
                   <th></th>
                 </tr>
               </thead>
@@ -72,16 +73,17 @@ class ListeDigicampiste extends React.Component {
                       <td>{digicampiste.site}</td>
                       <td>{digicampiste.staut}</td>
                       <td>{digicampiste.contexte}</td>
-                      <td><Button  className="btn btn-primary" name="btnUpdate">Update</Button></td>
-                      <td><Button  className="btn btn-danger" name="btnDelete">Delete</Button></td>
+                      <td><Button style={{ borderRadius: 19}}  className="btn btn-success"  size="sm" name="détails"><i className="fa fa-search-plus"></i></Button></td>
+                     <td><Button style={{ borderRadius: 19}} className="btn btn-primary" name="btnUpdate"><i className="fa fa-edit"> </i></Button></td>
+                      <td><Button style={{ borderRadius: 19}} className="btn btn-danger" name="btnDelete"><i className="fa fa-trash"> </i></Button></td>
                     </tr>
                   ))
                 }
               </tbody>
-            </table>
+            </Table>
           </div>
           <div>
-            <Button onClick={this.toggleAddForm} className="btn btn-success">Ajouter un nouveau projet</Button>
+            <Button onClick={this.toggleAddForm} className="btn btn-success">Ajouter un nouveau Digicampiste</Button>
           </div>
 
         </div>
